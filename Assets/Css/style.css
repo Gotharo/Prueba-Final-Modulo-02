@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #333;
+    --secondary-color: #ff8e8e;
+    --tertiary-color: #fff;
+    --quaternary-color: #000;
+    --quaternary-color: #00567e;
+    --font-family: 'Arial', sans-serif;
+    
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 0 2rem;    
+} 
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+    li {
+        font-size: .6rem;
+        margin: 0 1rem 0 0;
+    }
+}
+
+.nav div i {
+    margin: 0 .3rem;
+    font-size: .6rem;
+    padding: .5rem 0;
+} 
+ 
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #333;
+    color: white;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    width: 100vw;
+}
+.header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    list-style: none;
+    font-size: .8rem;
+    
+    
+}
+
+.header-row li {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 1rem 2rem;
+    flex: 1 0 0;
+    overflow: auto;
+
+}
+.main-galery {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas:  
+        "main-galery-item1 main-galery-item1 main-galery-item2"
+        "main-galery-item1 main-galery-item1 main-galery-item3"
+        "main-galery-item4 main-galery-item6 main-galery-item6"
+        "main-galery-item5 main-galery-item6 main-galery-item6"
+        "main-galery-item7 main-galery-item7 main-galery-item8"
+        "main-galery-item7 main-galery-item7 main-galery-item9"
+    ;
+    gap: .3rem;
+}
+.main section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--main-color);
+
+}
+
+.main-galery-item1 {
+    grid-area: main-galery-item1;
+}
+
+.main-galery-item2 {
+    grid-area: main-galery-item2;
+}
+
+.main-galery-item3 {
+    grid-area: main-galery-item3;
+}
+
+.main-galery-item4 {
+    grid-area: main-galery-item4;
+}
+
+.main-galery-item5 {
+    grid-area: main-galery-item5;
+}
+
+.main-galery-item6 {
+    grid-area: main-galery-item6;
+}
+
+.main-galery-item7 {
+    grid-area: main-galery-item7;
+}
+
+.main-galery-item8 {
+    grid-area: main-galery-item8;
+}
+
+.main-galery-item9 {
+    grid-area: main-galery-item9;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr;
+    grid-template-rows: 1rem 5rem 5rem;
+    grid-template-areas:  
+        "footer-name footer-lastproyects"
+        "footer-name footer-lastproyects"
+        "footer-name footer-lastproyects"       
+        ;
+    background-color: var(--main-color);
+    color: var(--tertiary-color);
+    height: 15rem;
+    padding: 2rem;
+}
+.footer >* {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin: 0 .2rem 0 .2rem;
+    flex: 1 0 0 ;
+    font-size: .8rem;
+}
+.footer section div i {
+    padding: 1rem 1rem 1rem 0;
+}
+.footer-name {
+    grid-area: footer-name;   
+}
+.footer section div img {
+    
+    height: 4rem;
+    object-fit: cover;
+    background-color: var(--main-color);
+}
+
+.footer-lastproyects {
+    grid-area: footer-lastproyects;
+
+}
+.footer-galery-proy {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 0;
+}
+
+.footer-lastproyects >*:nth-last-child(1) {
+    border-top: 1px solid var(--tertiary-color);
+}
+h2 {
+    display: flex;
+    align-items: flex-end;
+    
+}
+h4 {
+    display: flex;
+    align-items: flex-end;
+    margin-top: .4rem;
+    
+}
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-color);
+    height: 2rem;
+}
