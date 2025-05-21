@@ -8,7 +8,8 @@
     --secondary-color: #ff8e8e;
     --tertiary-color: #fff;
     --quaternary-color: #000;
-    --quaternary-color: #00567e;
+    --fifth-color: #00567e;
+    --sixt-color: goldenrod;
     --font-family: 'Arial', sans-serif;
     
 }
@@ -26,11 +27,18 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    color: var(--tertiary-color);
     
     li {
-        font-size: .6rem;
-        margin: 0 1rem 0 0;
+        font-size: .7rem;
+        margin: 0 1rem 0 0;      
     }
+}
+
+
+
+.fa-brands {
+    color: var(--tertiary-color);
 }
 
 .nav div i {
@@ -53,31 +61,53 @@
     margin: 2rem 0;
 }
 
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+
 .header-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #333;
-    color: white;
+    color:var(--main-color);
     padding: 0 2rem;
     margin-bottom: 1rem;
     width: 100vw;
+    background-color: var(--main-color);
 }
+.header-items i {
+    color: var(--sixt-color);
+}
+
 .header-row {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     list-style: none;
-    font-size: .8rem;
-    
-    
+    font-size: .8rem;   
 }
 
 .header-row li {
     display: flex;
     justify-content: center;
     margin: 0 10px;
+}
+.header-anchor {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.header-row li:first-child {
+    color: var(--sixt-color);
 }
 
 .main {
@@ -88,11 +118,11 @@
     margin: 1rem 2rem;
     flex: 1 0 0;
     overflow: auto;
-
 }
+
 .main-galery {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-columns: 1.7fr 2fr 1.7fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-areas:  
         "main-galery-item1 main-galery-item1 main-galery-item2"
@@ -193,6 +223,10 @@
     padding: .5rem 0;
 }
 
+.footer-galery-proy p {
+    padding: .3rem;
+}
+
 .footer-lastproyects >*:nth-last-child(1) {
     border-top: 1px solid var(--tertiary-color);
 }
@@ -213,4 +247,7 @@ h4 {
     align-items: center;
     background-color: var(--quaternary-color);
     height: 2rem;
+}
+.footer-contact h5 {
+    color: var(--fifth-color);
 }
