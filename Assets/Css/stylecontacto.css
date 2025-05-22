@@ -1,0 +1,110 @@
+:root {
+    --main-color: #333;
+    --secondary-color: #ff8e8e;
+    --tertiary-color: #fff;
+    --quaternary-color: #000;
+    --fifth-color: #00567e;
+    --sixt-color: goldenrod;
+    --font-family: 'Arial', sans-serif;
+    
+}
+
+.bycnt {
+  background-color: var(--main-bg-color);
+  border-radius: var(--main-radius);
+  /* padding-top: 50px; */
+  padding-left: 5%;
+  padding-right: 5%;
+  /* padding-bottom: 50px; */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 85vh;
+  color: var(--sixth-color);
+}
+
+.font-color-primary {
+  color: var(--sixt-color);
+}
+.font-color-secondary {
+  color: var(--tertiary-color);
+}
+.main-contact {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 40rem;
+    overflow: auto;
+    /* background-color: aliceblue;   */
+    width: 70vw;
+}
+.header {
+    width: 75vw;
+}
+.header-items {
+    justify-content: center;
+    width: 30rem;
+}
+
+.footer-desktop {
+    background-color: #272727;
+    height: 3rem;
+    margin-top: 1rem;
+    h5 {
+        font-size: .8rem;
+        color: var(--sixt-color);
+    }
+}
+.footer-contact {
+    display: none;
+}
+.fa-magnifying-glass {
+    margin-left: 1rem;
+}
+
+@media (max-width: 576px) {
+    .nav ul  {
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .main {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .header {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    .main-contact {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* background-color: aliceblue; */
+        height: 40rem;
+        /* overflow: hidden; */
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
+    .form-group {
+        width: 75vw;
+    }
+   .footer-movile {
+    height: 30rem
+   }
+   .footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    height: 2rem;
+        h5 {
+            font-size: .8rem;
+        }
+   }
+   .fa-magnifying-glass {
+    margin-left: 1rem;
+}
+}
+
