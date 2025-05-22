@@ -87,7 +87,7 @@ body {
     color: var(--main-color);
     padding: 0 2rem;
     margin-bottom: 1rem;
-    width: 100vw;
+    width: 80vw;
     background-color: var(--main-color);
 }
 .header-items i {
@@ -118,6 +118,9 @@ body {
 
 .header-row li:first-child {
     color: var(--sixt-color);
+}
+.fa-magnifying-glass {
+    margin-left: 1rem;
 }
 
 .main {
